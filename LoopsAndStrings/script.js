@@ -41,3 +41,10 @@ for(let key in objVar){
 
 }
 */
+
+let gameNum=25;
+let userNum = prompt("Guess the number:");
+while(gameNum!=userNum){
+    userNum = prompt("you entered wrong number, guess again: ");
+}
+console.log("Congratulations, you entered the right value");
