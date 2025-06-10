@@ -1,0 +1,22 @@
+#block{
+    height:100px;
+    width:100px;
+    margin-top: 1rem;
+    border:1px solid grey;
+    background-color: dodgerblue;
+    color:white;
+}
+
+#changeTheme{
+    margin-top: 2rem;
+}
+
+
+.dark{
+    background-color: black;
+    color:white;
+}
+.light{
+    background-color: white;
+    color:black;
+}
