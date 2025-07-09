@@ -1,3 +1,5 @@
+/*
+
 function sayMyName(){
     console.log("Ranjit");
 }
@@ -5,13 +7,13 @@ sayMyName();
 
 //arrow function
 
-/*
+
 const functionName = (parameter 1, parameter 2,...) => {
 
     //do work
 
 }
-*/
+
 
 const sum = (a,b) => {
     console.log(a+b);
@@ -76,7 +78,7 @@ cities.forEach((city,idx,arr)=>{
 /*
 Higher Order Function/Method --> the functions which take another function as parameter or return another function
 eg. forEach function
-*/
+
 
 
 let num = [6,4,8,3,5,9];
@@ -90,14 +92,14 @@ num.forEach((val,idx,num)=>{
     console.log(val*val,idx,num);
 })
 
-/*
+
 
 map-->create a new array with the results of some operation. The value its callback reutrns are used to form new array
 map is similar to forEach loop but the only difference is map create new array for the performed task
 
 arr.map(callbackFnx(value,index,array))
 
-*/
+
 
 let newarray = num.map((val)=>{
     return val*5;
@@ -105,9 +107,9 @@ let newarray = num.map((val)=>{
 console.log(newarray);
 
 
-/*
+
 filter-->creates a new array of elements that give true for a condition/filter
-*/
+
 
 let anotherarray=newarray.filter((val)=>{
     return val%2!=0;
@@ -116,9 +118,9 @@ let anotherarray=newarray.filter((val)=>{
 console.log(anotherarray);
 
 
-/*
+
 reduce-->performs some operations and reduces the array to a single value. It returns that single value
-*/
+
 
 let output = num.reduce((previous,curr)=>{
     return previous+curr;
@@ -130,3 +132,42 @@ let largest = num.reduce((prev,curr)=>{
     return prev>curr ? prev:curr;
 });
 console.log(largest);
+
+*/
+
+//FUNCTION REVISIT
+
+// function findSum(a,b){  //a and b is parameter for function defination
+//     console.log(a+b);
+// }
+
+// findSum(5,8);  // 5 and 8 are arguments which are passed in function call
+
+//return functions
+
+// function getsum(a,b,c){
+//     let sum=a+b+c;
+//     return sum;
+// }
+// let sum = getsum(5,8,4);
+// console.log(sum);
+
+//arrow function
+
+function getexpo(a,b){
+    return a**b;
+}
+
+console.log(getexpo(2,10));
+
+let getpower = function(a,b){
+    return a**b;
+}
+
+console.log(getpower(2,10));
+
+let getexpopower = (a,b) => {
+    return a**b;
+}
+
+console.log(getexpopower(2,10));
