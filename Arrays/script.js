@@ -51,7 +51,7 @@ splice()-->change original array(add,remove,replace)
 splice(startidx,delcount,newel)
 
 */
-
+/*
 let foodItems=["potato",'apple',"litchi",'tomato'];
 foodItems.push("orange");
 console.log(foodItems);
@@ -74,3 +74,6 @@ console.log(superHeroes.slice(2,4));
 
 console.log(superHeroes.splice(2,2,'captain America','hulk'));
 console.log(superHeroes);
+
+*/
+
